@@ -1,10 +1,18 @@
-:root {
-    }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: navy;
+    color: white;
+    margin-bottom: 50px;
   }
-  body {
-    
+  
+  section {
+    display: none;
   }
+  
+  body.start #start { display: block; }
+  body.game #game { display: block; }
+  body.score #score,
+  body.score #start { display: block; }
+  

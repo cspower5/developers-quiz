@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developers Quiz</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
+  </head>
+  <body class="start">
+    <script src="./assets/js/script.js" defer></script>
     <header>
-        <script src="script.js"></script>
+      <h1>Quiz!!</h1>
+      <p>Time: <span>0</span></p>
     </header>
-    
-</body>
-</html>
+    <section id="start">
+      <p>Play the game...</p>
+      <button>Start</button>
+    </section>
+    <section id="highscore">
+      <h2>High Scores:</h2>
+      <ol></ol>
+    </section>
+    <section id="game"></section>
+    <section id="score">
+      <h2>Your Score: <span>0</span></h2>
+      <label>Your Name: <input /></label>
+      <button>Submit</button>
+    </section>
+  </body>
+  </html>
