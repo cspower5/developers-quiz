@@ -6,7 +6,7 @@
     <title>Developers Quiz</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/script.js" defer></script>
+    
   </head>
   <body class="start">
     <header>
@@ -17,15 +17,16 @@
       <p>Click the Start Game Button to Begin...</p>
       <button>Start Game</button>
     </section>
+    <section id="game"></section>
+    <section id="score">
+      <h2>Your Score: <span>0</span></h2>
+      <label>Your Name: <input id="user-input" /></label>
+      <button>Submit</button>
+    </section>
     <section id="highscore">
       <h2>High Scores:</h2>
       <ol></ol>
     </section>
-    <section id="game"></section>
-    <section id="score">
-      <h2>Your Score: <span>0</span></h2>
-      <label>Your Name: <input /></label>
-      <button>Submit</button>
-    </section>
+    <script src="./assets/js/script.js" defer></script>
   </body>
   </html>

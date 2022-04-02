@@ -51,6 +51,7 @@ function renderQuestion(question){
 	document.querySelector("#game").innerHTML = html;
 }
 function renderHighScores(){
+	document.getElementById("user-input").value = "";
 	const data = getStorage();
 	let html = ``;
 	if (!data.length) html = "No High Scores Yet...";

@@ -4,30 +4,41 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: burlywood;
-    color: black;
+    /* color: black; */
     margin-bottom: 3em;
     padding-bottom: 3em;
-  }
-  header h1 {
+}
+header h1 {
     font-size: 3em;
     text-align: start;
     padding-left: 1em;
-  }
+}
 header p {
   padding-right: 2em;
 }
+body{
+  background-color: blanchedalmond;
+}
 /* Section styles */
-.start p {
+section {
   background-color: burlywood;
   width: 17em;
   font-size: 1.5em;
   margin-bottom: 1em;
   padding: 1em;
 }
-.start button {
+button {
   background-color: darkgoldenrod;
+  width: 10em;
+  font-size: large;
+  margin-top: 1em;
+}
+.start button {
   width: 7em;
   font-size: x-large;
+}
+.game button {
+  width: 15em;
 }
   /* Section display properties */
 section {
@@ -36,7 +47,7 @@ section {
   
   body.start #start { display: block; }
   body.game #game { display: block; }
-  /* body.score #highscore {display: block;} */
+  body.score #score {display: block;}
   body.score #highscore,
   body.score #start { display: block; }
   
