@@ -8,6 +8,8 @@ const timePerQuestion = 5,
 //app variables
 var score, timer, timeRemaining, currentQuestionIndex;
 
+//initialization
+init();
 
 function init(){
 	//happens ONCE when the page loads
@@ -95,6 +97,7 @@ function handleAnswer(e){
 }
 function endGame(){
 	changeState("score");
+    console.log(document.body.className);
 	stopTimer();
 	score = Math.max(score + timeRemaining, 0);
 	showScore();
@@ -132,6 +135,7 @@ function storeName(){
 }
 function getStorage(){
 	const data = localStorage.getItem(localStorageKey);
+    console.log(data);
 	if (!data) return [];
 	return JSON.parse(data);
 }
@@ -147,24 +151,49 @@ function shuffle(arr){
 //data
 const questions = [
 	{
-		q: "What is the answer?",
+		q: "If you type the following code in the console window, what result will you get? 3 > 2 > 1 === false",
 		a: [
-			"Correct",
-			"Wrong",
-			"Very Wrong",
-			"Incorrect"
+			"True",
+			"False",
+			"Undefined",
+			"Null"
 		]
 	},
 	{
-		q: "Do you know the answer?",
+		q: "JavaScript is a ___ -side programming language.?",
 		a: [
-			"Correct",
-			"Wrong",
-			"Very Wrong",
-			"Incorrect"
+			"Both",
+			"Client",
+			"Server",
+			"None"
+		]
+	},
+    {
+		q: "Which of the following will write the message “Hello DataFlair!” in an alert box?",
+		a: [
+			"alert(“Hello DataFlair!”);",
+			"alertBox(“Hello DataFlair!”);",
+			"alert(Hello DataFlair!);",
+			"msgAlert(“Hello DataFlair!”);"
+		]
+	},
+    {
+		q: "How do you find the minimum of x and y using JavaScript?",
+		a: [
+			"Math.min(x,y)",
+			"min(x,y);",
+			"Math.min(xy)",
+			"min(xy);"
+		]
+	},
+    {
+		q: "Which of the following statements will throw an error?",
+		a: [
+			"var fun = function bar{}",
+			"var fun = function bar(){}",
+			"function(){}",
+			"All statements will throw and error"
 		]
 	}
-];
 
-//initialization
-init();
+];

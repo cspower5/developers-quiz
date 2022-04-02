@@ -1,18 +1,42 @@
+/* header styles */
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background: navy;
-    color: white;
-    margin-bottom: 50px;
+    background-color: burlywood;
+    color: black;
+    margin-bottom: 3em;
+    padding-bottom: 3em;
   }
-  
-  section {
+  header h1 {
+    font-size: 3em;
+    text-align: start;
+    padding-left: 1em;
+  }
+header p {
+  padding-right: 2em;
+}
+/* Section styles */
+.start p {
+  background-color: burlywood;
+  width: 17em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.start button {
+  background-color: darkgoldenrod;
+  width: 7em;
+  font-size: x-large;
+}
+  /* Section display properties */
+section {
     display: none;
-  }
+}
   
   body.start #start { display: block; }
   body.game #game { display: block; }
-  body.score #score,
+  /* body.score #highscore {display: block;} */
+  body.score #highscore,
   body.score #start { display: block; }
   
