@@ -48,5 +48,4 @@ section {
   body.game #game { display: block; }
   body.score #score {display: block;}
   body.score #highscore {display: block;};
-  /* body.score #start { display: block; } */
-  
+   
