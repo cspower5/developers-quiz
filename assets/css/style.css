@@ -4,7 +4,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: burlywood;
-    /* color: black; */
     margin-bottom: 3em;
     padding-bottom: 3em;
 }
@@ -48,6 +47,6 @@ section {
   body.start #start { display: block; }
   body.game #game { display: block; }
   body.score #score {display: block;}
-  body.score #highscore,
-  body.score #start { display: block; }
+  body.score #highscore {display: block;};
+  /* body.score #start { display: block; } */
   

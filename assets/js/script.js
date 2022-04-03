@@ -1,7 +1,7 @@
 //settings
 const timePerQuestion = 5,
-	  wrongAnswerTimePenalty = 4,
-	  correctAnswerScoreBonus = 10,
+	  wrongAnswerTimePenalty = 2,
+	  correctAnswerScoreBonus = 5,
 	  localStorageKey = "quiz",
 	  numberOfHighScores = 5;
 
@@ -98,8 +98,7 @@ function handleAnswer(e){
 }
 function endGame(){
 	changeState("score");
-    console.log(document.body.className);
-	stopTimer();
+    stopTimer();
 	score = Math.max(score + timeRemaining, 0);
 	showScore();
 }
@@ -136,7 +135,6 @@ function storeName(){
 }
 function getStorage(){
 	const data = localStorage.getItem(localStorageKey);
-    console.log(data);
 	if (!data) return [];
 	return JSON.parse(data);
 }
